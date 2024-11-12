@@ -1,0 +1,54 @@
+:root {
+    --body-bg: #1C1C21;
+    --box-bg: #2C2C35;
+    --text-title: #fff;
+    --text-paragraph: #ffffffba;
+    --active-nav: #0AD1FD;
+    --hover-nav: #988BE8;
+    --border: #988BE8;
+    --stock-up: #00E396;
+    --stock-down: #FF4560;
+    --border-line: #555565c6;
+    --header-bg: #33334a;
+    --highlight-bg: #3b3b52;
+    --text-color: #ffffff;
+    --text-muted: #aaaaaa;
+}
+
+.period-nav{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.activeperiod{
+    color: var(--text);
+    background-color: var(--active-btn);
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+.inactiveperiod{
+    color: var(--text);
+    background-color: var(--box-bg);
+    width: 120px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.activeperiod:hover {
+    color: var(--hover-nav);
+}
+
+.inactiveperiod:hover {
+    color: var(--hover-nav);
+}

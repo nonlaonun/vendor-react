@@ -1,0 +1,234 @@
+:root{
+    --body-bg:#1C1C21;
+    --box-bg:#2C2C35;
+    --text-title: #fff;
+    --text-paragraph: #ffffffba;
+    --active-nav: #0AD1FD;
+    --hover-nav: #988BE8;
+    --border: #988BE8;
+    --stock-up: #00E396;
+    --stock-down: #FF4560;
+    --border-line: #555565c6;
+}
+
+.stock-overview{
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    color: var(--text-title);
+    line-height: 1.5rem;
+}
+
+.stock-info-detail{
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: var(--box-bg);
+    padding: 20px;
+    width: 100%;
+}
+
+.stock-description{
+    width: 100%;
+    height: auto;
+}
+
+.stock-description-title{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.stock-description-line{
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-bottom: 1px solid var(--border-line);
+}
+
+#stock-description-detail{
+    margin-top: 10px;
+    max-height: 3rem; /* ปรับให้แสดงแค่ 3 บรรทัด */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: var(--text-paragraph);
+}
+
+#stock-description-detail.expanded {
+    max-height: 1000px; /* ปรับตามความเหมาะสม */
+    transition: max-height 0.3s ease-in;
+}
+
+.read-more-btn{
+    font-size: 1.05em;
+    cursor: pointer;
+    color: var(--border);
+}
+
+.stock-snap-shot{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.stock-snap-shot-detail{
+    font-size: 0.85em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid var(--border-line);
+    margin-bottom: 8px;
+    height: auto;
+
+    .snap-metric{
+        width: 20%;
+    }
+    
+    .metric-detail{
+        width: 80%;
+        text-align: end;
+        
+    }
+
+}
+
+.stock-financial-overview-table{
+    margin-top: 20px;
+}
+
+.stock-financial-overview-table-title{
+    font-size: 0.90em;
+    font-weight: 520;
+}
+
+.stock-financial-overview{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.stock-financial-overview-column-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-title{
+    font-size: 0.95em;
+    font-weight: 520;
+}
+
+.profile-box{
+    margin-top: 3px;
+}
+
+.financial-list{
+    font-size: 0.85em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--border-line);
+}
+
+.margin{
+    margin-top: 15px;
+
+    .margin-title{
+        font-size: 0.95em;
+        font-weight: 520; 
+    }
+
+    .margin-box{
+        margin-top: 3px;
+    }
+}
+
+.return{
+    margin-top: 15px;
+
+    .return-title{
+        font-size: 0.95em;
+        font-weight: 520;
+    }
+
+    .return-box{
+        margin-top: 3px;
+    }
+}
+
+.stock-financial-overview-column-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.valuation-title{
+    font-size: 0.95em;
+    font-weight: 520;
+}
+
+.valuation-box{
+    margin-top: 3px;
+}
+
+.valuation{
+
+    .valuation-title{
+        font-size: 0.95em;
+        font-weight: 520;
+    }
+
+    .valuation-box{
+        margin-top: 3px;
+    }
+}
+
+.fin-health{
+    margin-top: 15px;
+
+    .fin-health-title{
+        font-size: 0.95em;
+        font-weight: 520;
+    }
+
+    .fin-health-box{
+        margin-top: 3px;
+    }
+}
+
+.stock-financial-overview-column-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.Yield-title{
+    font-size: 0.95em;
+    font-weight: 520;
+}
+
+.Yield-box{
+    margin-top: 3px;
+}
+
+.Cash{
+    margin-top: 15px;
+
+    .Cash-title{
+        font-size: 0.95em;
+        font-weight: 520;
+    }
+
+    .Cash-box{
+        margin-top: 3px;
+    }
+}
+
+.stock-chart{
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: var(--box-bg);
+    padding: 20px;
+    width: 100%;
+}
+

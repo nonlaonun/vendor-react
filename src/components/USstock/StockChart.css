@@ -1,0 +1,93 @@
+
+:root{
+--body-bg:#1C1C21;
+--box-bg:#2C2C35;
+--text-title: #fff;
+--text-paragraph: #ffffffba;
+--active-nav: #0AD1FD;
+--hover-nav: #988BE8;
+--border: #988BE8;
+--stock-up: #00E396;
+--stock-down: #FF4560;
+--border-line: #555565c6;
+}
+
+.stock-chart-container {
+    width: 99%;
+    background-color: var(--box-bg);
+    border-radius: 8px;
+    position: relative;
+}
+
+.period-button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.period-button {
+    font-size: 0.75rem;
+    border-radius: 4px;
+    width: 35px;
+    height: 25px;
+    background-color: var(--box-bg); /* สีพื้นหลังปุ่มที่ไม่ได้เลือก */
+    color: #fff; /* สีของข้อความ */
+    border: solid 1px var(--border);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.period-button:hover {
+    background-color: var(--border); /* สีเมื่อชี้ที่ปุ่ม */
+}
+
+.period-button.active {
+    background-color: var(--border); /* สีพื้นหลังปุ่มที่เลือก */
+    color: white; /* สีของข้อความเมื่อเลือก */
+}
+
+.loading {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pre-price-info{
+    display: flex; 
+    gap: 10px;
+    font-weight: 500;
+}
+
+.price-info.up{
+    gap: 7px;
+    font-size: 1em;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    color: var(--stock-up);
+
+    svg{
+        margin-left: -5px;
+        fill: var(--stock-up);
+        rotate: 0deg;
+        transition: rotate 300ms ease;
+    }
+}
+
+.price-info.down{
+    gap: 5px;
+    font-size: 1em;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    color: var(--stock-down);
+
+    svg{
+        margin-left: -5px;
+        fill: var(--stock-down);
+        rotate: 180deg;
+        transition: rotate 300ms ease;
+    }
+}

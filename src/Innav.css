@@ -1,0 +1,48 @@
+:root{
+  --body-bg:#1C1C21;
+  --box-bg:#2C2C35;
+  --active-btn: #40404F;
+  --text: #fff;
+  --active-nav: #0AD1FD;
+  --hover-nav: #988BE8;
+}
+
+.Investment-nav{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.Innavactive{
+    color: var(--text);
+    background-color: var(--active-btn);
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+.Innavinactive {
+    color: var(--text);
+    background-color: var(--box-bg);
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+
+.Innavactive:hover {
+    color: var(--hover-nav);
+  }
+  
+.Innavinactive:hover {
+    color: var(--hover-nav);
+  }

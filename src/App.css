@@ -1,0 +1,39 @@
+:root{
+    --body-bg:#1C1C21;
+    --box-bg:#2C2C35;
+    --text: #fff;
+    --active-nav: #0AD1FD;
+    --hover-nav: #988BE8;
+    --border: #988BE8;
+    --stock-up: #00E396;
+    --stock-down: #FF4560;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'kanit', sans-serif;
+}
+
+body{
+    line-height: 1.5rem;
+    color: var(--text);
+}
+
+.render-content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh;
+}
+
+.main-page-content{
+    overflow-x: hidden;
+    padding: 0 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hover-nav);
+    border-radius: 4px;
+}

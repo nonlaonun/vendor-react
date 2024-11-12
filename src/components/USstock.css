@@ -1,0 +1,129 @@
+:root{
+    --body-bg:#1C1C21;
+    --box-bg:#2C2C35;
+    --text: #fff;
+    --active-nav: #0AD1FD;
+    --hover-nav: #988BE8;
+    --border: #988BE8;
+    --stock-up: #00E396;
+    --stock-down: #FF4560;
+}
+
+.USstock-content-render{
+    margin-top: 80px;
+}
+
+.stock-profile{
+    width: 100%;
+    background-color: var(--box-bg);
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.stock-profile-img{
+    width: 80px;
+    height: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-symbol{
+    width: 75%; /* รูปภาพจะกว้าง 100% ของกล่อง */
+    height: 75%; /* รูปภาพจะสูง 100% ของกล่อง */
+    object-fit: contain;
+}
+
+.stock-profile-name{
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.stock-full-name{
+    font-size: 1.3em;
+    font-weight: 450;
+    justify-content: center;
+}
+
+.stock-market-location{
+    display: flex;
+    gap: 10px;
+    font-size: 0.95em;
+    align-items: center;
+    font-weight: 350;
+}
+
+.stock-profile-pricing{
+    border-left: solid 1px #c0c0c0;
+    margin-left: 10px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.stock-price-box{
+    
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stock-price{
+    font-weight: 500;
+    font-size: 1.4em;
+    
+}
+
+.stock-currency{
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+
+.stock-change-box.up{
+    gap: 10px;
+    font-size: 1em;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    color: var(--stock-up);
+
+    svg{
+        margin-left: -5px;
+        fill: var(--stock-up);
+        rotate: 0deg;
+        transition: rotate 150ms ease;
+    }
+}
+
+.stock-change-box.down{
+    gap: 5px;
+    font-size: 1em;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    color: var(--stock-down);
+
+    svg{
+        margin-left: -5px;
+        fill: var(--stock-down);
+        rotate: 180deg;
+        transition: rotate 150ms ease;
+    }
+}
+
