@@ -771,6 +771,11 @@ return (
         </div>
       </div>
     </div>
+      
+    <div className='sec-link-box'>
+      ที่มาของบการเงิน : <a className='sec-link' href={data[0]?.finalLink} target="_blank" rel="noopener noreferrer">{data[0]?.finalLink}</a>
+    </div>
+      
   </div>
   );
 };
