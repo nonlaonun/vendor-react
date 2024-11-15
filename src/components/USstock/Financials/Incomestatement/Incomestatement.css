@@ -91,6 +91,12 @@ td:first-child {
     font-weight: 500;
 }
 
+td:not(:first-child), th:not(:first-child){
+    text-align: end;
+    width: 200px;
+    min-width: 200px;
+}
+
 th:first-child {
     position: sticky;
     left: 0;
@@ -121,4 +127,15 @@ table th:last-child, td:last-child {
 
 ::-webkit-scrollbar-track {
     background: var(--body-bg);
+}
+
+.sec-link-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+
+.sec-link{
+    text-decoration: none;
+    color: var(--border);
 }
