@@ -16,18 +16,18 @@
 }
 
 .container {
-    max-width: 100%;
+    max-width: 99%;
     max-height: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .precontainer{
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .container2 {
-    max-width: 100%;
+    max-width: 99%;
     max-height: 100%;
     margin-top: 25px;
 }
