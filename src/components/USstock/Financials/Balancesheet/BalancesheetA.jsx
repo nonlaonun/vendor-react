@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import './Balancesheet.css';
 
 function BalancesheetA() {
   const [data, setData] = useState([]);
