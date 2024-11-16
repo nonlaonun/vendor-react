@@ -18,16 +18,16 @@
 .container {
     max-width: 99%;
     max-height: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .precontainer{
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .container2 {
-    max-width: 100%;
+    max-width: 99%;
     max-height: 100%;
     margin-top: 25px;
 }
@@ -63,6 +63,14 @@ table th, table td {
     font-size: 14px;
     transition: background-color 0.3s;
 }
+table th, table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid var(--border-line);
+    color: var(--text-color);
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
 
 table th {
     position: sticky;
@@ -87,7 +95,7 @@ td:first-child {
     z-index: 2;
     background: var(--body-bg);
     color: var(--text-muted);
-    width: 300px;
+    width: 350px;
     font-weight: 500;
 }
 
