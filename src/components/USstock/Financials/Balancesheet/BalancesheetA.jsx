@@ -100,7 +100,7 @@ function BalancesheetA() {
   return (
     <div className="rendertable">
       <div className='precontainer'>
-        <h1>สินทรัพย์</h1>
+        <div className='title'>สินทรัพย์</div>
         <div className="container">
           <div className="row">
             {loading ? (
@@ -135,7 +135,7 @@ function BalancesheetA() {
       </div>
 
       <div className='precontainer'>
-        <h1>หนี้สิน</h1>
+        <div className='title'>หนี้สิน</div>
         <div className="container">
           <div className="row">
             {loading ? (
