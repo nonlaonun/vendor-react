@@ -1,14 +1,29 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { NavLink, Routes, Route, Navigate} from 'react-router-dom';
+import BalancesheetA from './Balancesheet/BalancesheetA';
+import BalancesheetQ from './Balancesheet/BalancesheetQ';
+import './period.css'
 
 
 function Balancesheet() {
-  const { symbol } = useParams(); 
-
   return (
     <div>
-      Balance sheet
-      <p>Symbol =  {symbol}</p>
+      <div className='period-nav'>
+        <NavLink className={({ isActive }) => (isActive ? "activeperiod" : "inactiveperiod")}
+        to="annual">Annual</NavLink>
+
+        <NavLink className={({ isActive }) => (isActive ? "activeperiod" : "inactiveperiod")}
+        to="quarterly">Quarterly</NavLink>
+      </div>
+
+      <div className='Routes'>
+        <Routes>
+          <Route path="/" element={<Navigate replace to="annual" />} />
+          <Route path="*" element={<Navigate replace to="annual" />} />
+          <Route path="annual" element={<BalancesheetA />} />
+          <Route path="quarterly" element={<BalancesheetQ />} />
+        </Routes>
+      </div>
     </div>
   )
 }
