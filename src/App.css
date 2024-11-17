@@ -33,15 +33,6 @@ body{
     padding: 0 20px;
 }
 
-@media (max-width: 840px) {
-
-    .main-page-content {
-       overflow-x: hidden;
-       padding: 0 20px;
-       grid-template-row: auto;
-}
-}
-
 ::-webkit-scrollbar-thumb {
     background: var(--hover-nav);
     border-radius: 4px;
