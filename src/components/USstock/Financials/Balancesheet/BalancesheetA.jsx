@@ -97,7 +97,6 @@ function BalancesheetA() {
     return '-'; // ถ้าไม่มีข้อมูลหรือไม่ใช่ตัวเลข
   };
 
-
   const Equity = [
     { label: "preferredStock", key: "preferredStock" },
     { label: "commonStock", key: "commonStock" },
