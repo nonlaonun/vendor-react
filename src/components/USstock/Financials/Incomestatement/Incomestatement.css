@@ -16,7 +16,7 @@
 }
 
 .container {
-    max-width: 95%;
+    max-width: 97%;
     max-height: 100%;
     margin-top: 20px;
 }
@@ -27,13 +27,12 @@
 }
 
 .title{
-    outline: auto;
     font-size: 1.7rem;
     font-weight: 500;
 }
 
 .container2 {
-    max-width: 99%;
+    max-width: 97%;
     max-height: 100%;
     margin-top: 25px;
 }
